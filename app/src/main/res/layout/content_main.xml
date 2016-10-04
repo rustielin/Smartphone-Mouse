@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rustielin.chaoticevil.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--Horizontal top-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.rustielin.chaoticevil.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+
+        <Button
+            android:text="Left Click"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/left_click" />
+
+
+        <Button
+            android:text="Right Click"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/right_click" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.rustielin.chaoticevil.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.rustielin.chaoticevil.MainActivity"
+            tools:showIn="@layout/activity_main">
+
+            <TextView
+                android:text="IP Address:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ip_please"
+                android:layout_weight="1" />
+
+            <EditText
+                android:selectAllOnFocus="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10.142.15.19"
+                android:id="@+id/ip" />
+            <TextView
+                android:text="Port (Default 5006):"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/port_pls"
+                android:layout_weight="1" />
+
+
+            <EditText
+                android:selectAllOnFocus="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5006"
+                android:ems="10"
+                android:id="@+id/port" />
+            <TextView
+                android:text="Message:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="1" />
+
+            <EditText
+                android:selectAllOnFocus="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type a message"
+                android:ems="10"
+                android:id="@+id/message" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.rustielin.chaoticevil.MainActivity"
+            tools:showIn="@layout/activity_main">
+
+
+            <Button
+                android:text="Send Data"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/send" />
+
+            <Button
+                android:text="Stop Data"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stop" />
+
+
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
