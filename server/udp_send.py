@@ -1,8 +1,8 @@
 import socket
 
-UDP_IP = "10.142.15.19"
-
+UDP_IP = "10.142.14.43"
 UDP_PORT = 5006
+
 
 MESSAGE = input("Message? ")
 
